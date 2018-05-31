@@ -1,0 +1,14 @@
+  # Custom rule violating when type inference is not used.
+  # Violating:
+  #   let view: UIView = UIView()
+  #   view.backgroundColor = UIColor.red()
+  # Non-violating:
+  #   let view = UIView()
+  #   view.backgroundColor = .red
+  # TODO: Expand regex to also find UIColor.clear, CGPoint.zero etc.
+  #       regex: "(\\:\\s(\\w+)\\s\\=\\s\\1|UIViewAutoResizing\\.|(?!AttributedStringKey.\\.\\*)UIFont\\.|UIControlState\\.|UIColor.\\.\\*(?!.cgColor)|CGPoint\\.|CGRect\\.)"
+  type_inferred_context:
+    name: "type_inferred_context"
+    regex: "\\:\\s(\\w+)\\s\\=\\s\\1"
+    message: "Type inferred context is preferred over explicit types."
+    severity: warning  
