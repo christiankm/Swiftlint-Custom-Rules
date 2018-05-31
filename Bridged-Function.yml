@@ -1,0 +1,5 @@
+  bridged_function:
+    name: "Bridged Function"
+    regex: "\\.bridged"
+    message: "You should never use a bridged type or function meant for Objective-C in Swift. Use the Swift equivalent instead."
+    severity: error
