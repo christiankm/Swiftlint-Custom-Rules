@@ -1,0 +1,6 @@
+  # Custom rule violating when closing brace is preceded by new line.
+  closing_brace_vertical_spacing:
+    name: "Closing Brace Vertical Spacing"
+    regex: "\\n{2,}\\}"
+    message: "Closing braces should not be followed by a new line before another closing brace."
+    severity: warning
