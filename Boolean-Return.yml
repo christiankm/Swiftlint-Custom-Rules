@@ -1,0 +1,5 @@
+  boolean_return:
+    name: "Boolean Return"
+    regex: "\\? (true : false)|(false : true)"
+    message: "It is redundant to return true or false for a boolean value. Instead return the value itself."
+    severity: warning
