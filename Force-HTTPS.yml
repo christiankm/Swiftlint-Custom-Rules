@@ -1,0 +1,5 @@
+  force_https:
+    name: "Force HTTPS"
+    regex: "(?i)http:\\/\\/"
+    message: "Using HTTP is not secure. Use HTTPS where possible."
+    severity: warning
