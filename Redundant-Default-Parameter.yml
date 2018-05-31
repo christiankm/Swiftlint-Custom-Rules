@@ -1,0 +1,6 @@
+  # Custom rule violating if specifing a parameter to it's default value.
+  redundant_default_parameter:
+    name: "Redundant Default Value"
+    regex: "(present|dismiss)\\(\\V*, completion: nil\\)"
+    message: "Specifying a parameter with it's default value is redundant. Remove parameter or change it's value."
+    severity: warning
