@@ -1,0 +1,9 @@
+  final_class:
+    name: "Final Class"
+    regex: "(?<!final )class (?!(\\{|private|func|var|.*XCTestCase))"
+    message: "Classes without subclasses should be marked as `final`."
+    match_kinds:
+    - identifier
+    - keyword
+    - typeidentifier
+    severity: warning
