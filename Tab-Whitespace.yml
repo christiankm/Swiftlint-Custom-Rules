@@ -1,0 +1,6 @@
+  # Custom rule violating if tabs are used for indentation instead of spaces.
+  tabs:
+    name: "Tab Whitespace"
+    regex: "\\t" 
+    message: "Using tabs is discouraged. Use spaces only."
+    severity: warning
