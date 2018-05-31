@@ -1,0 +1,8 @@
+  documentation_ticks:
+    name: "Documentation Ticks"
+    regex: "´"
+    message: "Incorrect Markdown format used. Mark types in '`' instead of '´' for proper formatting."
+    match_kinds:
+      - comment
+      - doccomment
+    severity: warning
