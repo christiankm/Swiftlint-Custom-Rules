@@ -1,0 +1,6 @@
+  # Custom rule violating for constants in Objective-C format i.e. kConstant
+  legacy_constant:
+    name: "Legacy Constant"
+    regex: "(let|var) k[A-Z]"
+    message: "Contant naming of `kSomeConstant` is discouraged. Constant should be named like `someConstant`"
+    severity: warning
