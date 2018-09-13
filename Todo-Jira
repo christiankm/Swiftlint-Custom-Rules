@@ -1,0 +1,5 @@
+todo_jira:
+    name: "TODO without JIRA reference"
+    regex: "(?i)(?=[^\\n]\\/\\/\\s+(TODO|TO DO|FIX|FIXME|FIX ME):)(?!.*PAY\\-\\d+)[^\\n]*"
+    message: "Do not add TODOs without a JIRA reference. Create new JIRA Task and add Issue Id to comment."
+    severity: warning
