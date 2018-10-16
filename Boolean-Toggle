@@ -1,0 +1,5 @@
+boolean_toggle:
+    name: "Boolean Toggle"
+    regex: "(\\w\\w+)\\s=\\s\\!\\1"
+    message: "Using `.toggle` to toggle booleans is preferred in Swift 4.2 and later."
+    severity: error
